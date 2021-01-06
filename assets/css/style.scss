@@ -1899,3 +1899,10 @@ body.dark  .info .phone {
   overflow: hidden;
 }
 
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
