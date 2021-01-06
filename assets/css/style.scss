@@ -28,7 +28,21 @@
 
 /**/
 
+/*Boton enviar*/
 
+.contact button[type="submit"] {
+  background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+
+
+/**/
 
 $negro: #111111;
 $blanco: #FEFEFE;
