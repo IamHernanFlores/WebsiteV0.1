@@ -245,6 +245,8 @@ nav .enlaces a:hover {
 
 button {
   outline: none !important;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
 }
 
 body {
@@ -358,6 +360,13 @@ a:hover {
   [data-aos-delay] {
     -webkit-transition-delay: 0 !important;
             transition-delay: 0 !important;
+  }
+  .contact .php-email-form {
+    background: #fff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 200px;
   }
 }
 
@@ -595,9 +604,27 @@ body.dark .bxl-github:before {
 }
 
 /**/
+/**/
 .address {
   background: #ffff;
-  margin-top: 38px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  width: 245px;
+  margin-left: auto;
+  margin-right: auto;
+  /*CAMBIO FORM*/
+}
+
+body.dark .address {
+  background: #111;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  border-radius: revert;
+}
+
+.contact .info .email, .contact .info .phone {
+  margin-top: 40px;
+  background: #ffff;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
   width: 245px;
@@ -605,14 +632,7 @@ body.dark .bxl-github:before {
   margin-right: auto;
 }
 
-body.dark .address {
-  background: #111;
-  margin-top: 38px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-  border-radius: revert;
-}
-
+/**/
 @media (min-width: 992px) {
   /*Desktop foto*/
   #hero {
@@ -673,6 +693,42 @@ body.dark .address {
     -webkit-transition: .3s ease all;
     transition: .3s ease all;
   }
+  .contact .info {
+    width: 100%;
+    margin-top: 20px;
+    /*CAMBIO FORM*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+  }
+  body.dark .info .email {
+    margin-top: 0px;
+    background: #111;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    border-radius: revert;
+    transition: .3s ease all;
+  }
+  .contact .info .email, .contact .info .phone {
+    margin-top: 0;
+    background: #ffff;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    width: 245px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .3s ease all;
+  }
+  body.dark .info .email {
+    margin-top: 0px;
+    background: #111;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    border-radius: revert;
+    transition: .3s ease all;
+  }
   body.dark #hero {
     text-align: center;
     width: 100%;
@@ -706,8 +762,9 @@ body.dark .address {
   }
 }
 
-@media (max-width: 398px) {
+@media (max-width: 558px) {
   /*Mobile foto*/
+  /*CAMBIO FORM*/
   #hero {
     text-align: center;
     width: 100%;
@@ -715,6 +772,29 @@ body.dark .address {
     background: url("../img/LAPORTADA3.png") top left no-repeat;
     background: #fff;
     -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+  }
+  .contact .info {
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+    /*CAMBIO FORM*/
+  }
+  .contact .info .email, .contact .info .phone {
+    margin-top: 40px;
+    background: #ffff;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    width: 245px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body.dark .info .email {
+    margin-top: 40px;
+    background: #111;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    border-radius: revert;
     transition: .3s ease all;
   }
   body.dark #hero {
@@ -1582,19 +1662,10 @@ body.dark .contact .info i {
   color: #728394;
 }
 
-.contact .info .email, .contact .info .phone {
-  margin-top: 40px;
-  background: #ffff;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-  width: 245px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/**/
 body.dark .info .email {
-  margin-top: 40px;
   background: #111;
+  /*CAMBIO FORM*/
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
   border-radius: revert;
@@ -1602,7 +1673,6 @@ body.dark .info .email {
 }
 
 body.dark .info .phone {
-  margin-top: 40px;
   background: #111;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
@@ -1610,16 +1680,83 @@ body.dark .info .phone {
   transition: .3s ease all;
 }
 
+/**/
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  /*CAMBIO FORM*/
   background: #0563bb;
   color: #fff;
 }
 
+/**/
 .contact .php-email-form {
-  width: 100%;
-  background: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
 }
 
+body.dark .contact .php-email-form {
+  background: #1111;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+body.dark .contact .php-email-form input {
+  height: 44px;
+  background: #222;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #ffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+body.dark .form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #222;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+/**/
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
@@ -1672,17 +1809,6 @@ body.dark .info .phone {
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 4px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input {
-  height: 44px;
 }
 
 .contact .php-email-form textarea {

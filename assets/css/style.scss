@@ -247,6 +247,8 @@ nav {
 // Border off en el boton
 button{
   outline: none !important; 
+  transition: .3s ease all;
+
 
 }
 
@@ -359,6 +361,13 @@ body {
     [data-aos-delay] {
       transition-delay: 0 !important;
     }
+    .contact .php-email-form {
+      background: #fff;
+     justify-content: center; 
+     margin-left: 200px; 
+  
+    }
+    
   }
   
   /*--------------------------------------------------------------
@@ -382,12 +391,14 @@ body {
       border-right: 1px solid #e6e9ec; */
       left: -300px;
     }
+  
   }
   
   @media (min-width: 992px) {
     #main {
       margin-left: 100px;
     }
+    
   }
   
   /*--------------------------------------------------------------
@@ -609,29 +620,36 @@ body.dark .bxl-github:before {
 
 
 //=======================Arreglo aparte=========================================
-
+/**/
 
 .address {
   background: #ffff;  
-  margin-top: 38px;
   transition: .3s ease all;  
   // Cambia el tamaño del elemento
   width: 245px;
   margin-left: auto;
   margin-right: auto;
-
+                                                                                                            /*CAMBIO FORM*/
 } 
     
   body.dark .address{
     background: #111;
-    margin-top: 38px;
     transition: .3s ease all;  
     border-radius: revert;
     
   } 
     
+  .contact .info .email, .contact .info .phone {
+    margin-top: 40px;
+    background: #ffff;
+    transition: .3s ease all;  
+    // Alinea elemento en el medio
+    width: 245px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-
+/**/
   
   @media (min-width: 992px) { /*Desktop foto*/
     #hero {
@@ -685,8 +703,41 @@ body.dark .bxl-github:before {
       height: 100vh;
       background: url("../img/LAPORTADA3.png")  top right no-repeat ; 
       background: #fff;
-      transition: .3s ease all;  
+      transition: .3s ease all;
     }
+    .contact .info {
+      width: 100%;
+      margin-top: 20px;                             /*CAMBIO FORM*/
+      display: flex;
+      transition: .3s ease all;
+  }
+  
+  body.dark .info .email {
+    margin-top: 0px;
+    background: #111;   
+    transition: .3s ease all;  
+    border-radius: revert;
+    transition: .3s ease all;
+}
+  .contact .info .email, .contact .info .phone {
+    margin-top: 0;
+    background: #ffff;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    width: 245px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .3s ease all;
+
+}
+body.dark .info .email {
+  margin-top: 0px;
+  background: #111;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  border-radius: revert;
+  transition: .3s ease all;
+}
       body.dark #hero{
         text-align: center;
         width: 100%;
@@ -720,7 +771,7 @@ body.dark .bxl-github:before {
     }
 
 
-  @media (max-width: 398px) { /*Mobile foto*/
+  @media (max-width: 558px) { /*Mobile foto*/  /*CAMBIO FORM*/
     #hero {
       text-align: center;
       width: 100%;
@@ -729,6 +780,27 @@ body.dark .bxl-github:before {
       background: #fff;
       transition: .3s ease all;  
     }
+    .contact .info {
+      width: 100%;
+      margin-top: 20px;
+      display: block;            /*CAMBIO FORM*/
+  }
+  .contact .info .email, .contact .info .phone {
+    margin-top: 40px;
+    background: #ffff;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    width: 245px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body.dark .info .email {
+  margin-top: 40px;
+  background: #111;   
+  transition: .3s ease all;  
+  border-radius: revert;
+  transition: .3s ease all;
+}
     body.dark #hero { // coloca la misma foto pero en dark 
       text-align: center;
       width: 100%;
@@ -1563,47 +1635,91 @@ body.dark h4 {
     font-size: 14px;
     color: #728394;
   }
-  
-  .contact .info .email, .contact .info .phone {
-    margin-top: 40px;
-    background: #ffff;
-    transition: .3s ease all;  
-    // Alinea elemento en el medio
-    width: 245px;
-    margin-left: auto;
-    margin-right: auto;
-
-  }
+  /**/
 
   body.dark .info .email {
-    margin-top: 40px;
-    background: #111;   
+    background: #111;                                                                               /*CAMBIO FORM*/
     transition: .3s ease all;  
     border-radius: revert;
     transition: .3s ease all;
-
-
 }
 
 body.dark  .info .phone {
-  margin-top: 40px;
   background: #111;    
   transition: .3s ease all;  
   border-radius: revert;
   transition: .3s ease all;
-
-
 }
   
-  .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+/**/
+
+  .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {                       /*CAMBIO FORM*/
     background: #0563bb;
     color: #fff;
-  }
-  
+  } 
+  /**/
   .contact .php-email-form {
-    width: 100%;
-    background: #fff;
+   justify-content: center; 
+   margin-left: auto; 
+  margin-right: auto; 
+  transition: .3s ease all;
+
   }
+
+  body.dark .contact .php-email-form {
+    background: #1111;
+   justify-content: center; 
+   margin-left: auto; 
+  margin-right: auto; 
+  transition: .3s ease all;
+
+  }
+
+  .contact .php-email-form input {
+    height: 44px;
+    transition: .3s ease all;
+}
+
+body.dark .contact .php-email-form input {
+  height: 44px;
+  background: #222;
+  transition: .3s ease all; 
+}
+
+    .form-control {
+      display: block;
+      width: 100%;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #ffff;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: .25rem;
+      transition: .3s ease all; 
+
+  }
+  body.dark  .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #222;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: .3s ease all; 
+
+}
+
+  /**/
   
   .contact .php-email-form .form-group {
     padding-bottom: 8px;
@@ -1659,16 +1775,8 @@ body.dark  .info .phone {
     animation: animate-loading 1s linear infinite;
   }
   
-  .contact .php-email-form input, .contact .php-email-form textarea {
-    border-radius: 4px;
-    box-shadow: none;
-    font-size: 14px;
-  }
   
-  .contact .php-email-form input {
-    height: 44px;
-  }
-  
+
   .contact .php-email-form textarea {
     padding: 10px 12px;
   }
@@ -1769,6 +1877,7 @@ body.dark  .info .phone {
     .portfolio-details .portfolio-info {
       padding-top: 20px;
     }
+    
   }
   
   /*--------------------------------------------------------------
@@ -1899,6 +2008,8 @@ body.dark  .info .phone {
   overflow: hidden;
 }
 
+
+// Saca el efecto que se meueve del nav 
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
