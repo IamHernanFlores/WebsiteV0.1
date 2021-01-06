@@ -25,18 +25,6 @@
 
 -*/
 /**/
-/*Boton enviar*/
-.contact button[type="submit"] {
-  background: #0563bb;
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-/**/
 body {
   background: #fff;
   -webkit-transition: .3s ease all;
@@ -1827,6 +1815,10 @@ body.dark .form-control {
   padding: 10px 12px;
 }
 
+textarea.form-control {
+  min-height: calc(9.5em + .75rem + 2px);
+}
+
 .contact .php-email-form button[type="submit"] {
   background: #0563bb;
   border: 0;
@@ -2058,4 +2050,18 @@ body.dark .form-control {
   outline: none;
   border: none;
 }
+
+/*Boton enviar*/
+.contact button[type="submit"] {
+  background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+/**/
 /*# sourceMappingURL=style.css.map */

@@ -28,21 +28,7 @@
 
 /**/
 
-/*Boton enviar*/
 
-.contact button[type="submit"] {
-  background: #0563bb;
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-
-
-/**/
 
 $negro: #111111;
 $blanco: #FEFEFE;
@@ -1794,7 +1780,9 @@ body.dark .contact .php-email-form input {
   .contact .php-email-form textarea {
     padding: 10px 12px;
   }
-  
+  textarea.form-control {
+    min-height: calc(9.5em + .75rem + 2px);
+}
   .contact .php-email-form button[type="submit"] {
     background: #0563bb;
     border: 0;
@@ -2031,3 +2019,21 @@ body.dark .contact .php-email-form input {
   outline: none;
   border: none;
 }
+
+
+/*Boton enviar*/
+
+.contact button[type="submit"] {
+  background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+
+
+/**/
