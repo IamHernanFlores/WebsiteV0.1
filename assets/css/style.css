@@ -680,6 +680,13 @@ body.dark .address {
     -webkit-transition: .3s ease all;
     transition: .3s ease all;
   }
+  .alert-success {
+    /*Alerta mensaje */
+    color: #0563bb;
+    margin-top: 150px;
+    background: none;
+    border: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -760,6 +767,13 @@ body.dark .address {
     -webkit-transition: .3s ease all;
     transition: .3s ease all;
   }
+  .alert-success {
+    /*Alerta mensaje */
+    color: #0563bb;
+    margin-top: 150px;
+    background: none;
+    border: none;
+  }
 }
 
 @media (max-width: 558px) {
@@ -827,6 +841,13 @@ body.dark .address {
     right: 0;
     -webkit-transition: .3s ease all;
     transition: .3s ease all;
+  }
+  .alert-success {
+    /*Alerta mensaje */
+    color: #0563bb;
+    margin-top: 100px;
+    background: none;
+    border: none;
   }
 }
 
@@ -2062,6 +2083,4 @@ textarea.form-control {
   border-radius: 50px;
   margin-top: 10px;
 }
-
-/**/
 /*# sourceMappingURL=style.css.map */

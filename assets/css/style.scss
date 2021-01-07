@@ -692,6 +692,12 @@ body.dark .bxl-github:before {
       transition: .3s ease all;  
 
     }
+    .alert-success { /*Alerta mensaje */
+      color: #0563bb;
+      margin-top: 150px;
+      background: none;
+    border: none;
+    }
 
   }
   
@@ -768,6 +774,13 @@ body.dark .info .email {
         transition: .3s ease all;  
 
       }
+      .alert-success { /*Alerta mensaje */
+        color: #0563bb;
+        margin-top: 150px;
+        background: none;
+    border: none;
+      }
+  
     }
 
 
@@ -794,6 +807,7 @@ body.dark .info .email {
     margin-left: auto;
     margin-right: auto;
 }
+
 body.dark .info .email {
   margin-top: 40px;
   background: #111;   
@@ -831,9 +845,18 @@ body.dark .info .email {
         transition: .3s ease all;  
 
       }
+      .alert-success { /*Alerta mensaje */
+        color: #0563bb;
+        margin-top: 100px;
+        background: none;
+    border: none;
+      }
     }
   
   
+
+
+
 
 
 //================================================================
@@ -2036,4 +2059,3 @@ body.dark .contact .php-email-form input {
 
 
 
-/**/
