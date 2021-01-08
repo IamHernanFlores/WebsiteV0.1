@@ -193,3 +193,16 @@ btnSwitch.addEventListener('click', () => {
     document.body.classList.toggle('dark');
     btnSwitch.classList.toggle('active');
 });
+
+
+
+// Progreso tecnologiaa 
+
+document.addEventListener('DOMContentLoaded', function () {
+  let figure = document.getElementById('photo');
+  let directions = document.getElementById('directions');
+
+  directions.addEventListener('change', function () {
+    figure.setAttribute('tooltip-dir', this.value);
+  });
+});
