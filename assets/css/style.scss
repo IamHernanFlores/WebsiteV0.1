@@ -651,25 +651,25 @@ body.dark .bxl-github:before {
 
 /**/
   
-  @media (min-width: 992px) { /*Desktop foto*/
-    #hero {
-      padding-left: 160px;
-      width: 100%;
-      height: 50vh;
-      background: url("../img/hero-bg11.png")  top right no-repeat ; /*Desktop foto predeterminado*/
-      background-size: cover;
-      position: relative;
-      transition: .3s ease all;  
-      }
-    body.dark #hero {
-      padding-left: 160px;
-      width: 100%;
-      height: 50vh;
-      background: url("../img/hero-bg11b.png")  top right no-repeat ; /*Desktop foto */
-      background-size: cover;
-      position: relative;
-      transition: .3s ease all;
+@media (min-width: 992px) { /*Desktop foto*/
+  #hero {
+    padding-left: 160px;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/hero.png")  top right no-repeat ; /*Desktop foto predeterminado*/
+    background-size: cover;
+    position: relative;
+    transition: .3s ease all;  
     }
+  body.dark #hero {
+    padding-left: 160px;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/heroB.png")  top right no-repeat ; /*Desktop foto */
+    background-size: cover;
+    position: relative;
+    transition: .3s ease all;
+  }
     /*Maneja el fonfo global en modo normal*/
     #hero:before {
       content: "";
