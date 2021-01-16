@@ -639,7 +639,7 @@ body.dark .address {
     padding-left: 160px;
     width: 100%;
     height: 100vh;
-    background: url("../img/hero.png") top right no-repeat;
+    background: url("../img/HeroW.png") top right no-repeat;
     /*Desktop foto predeterminado*/
     background-size: cover;
     position: relative;
@@ -650,7 +650,7 @@ body.dark .address {
     padding-left: 160px;
     width: 100%;
     height: 100vh;
-    background: url("../img/heroB.png") top right no-repeat;
+    background: url("../img/HeroBB.png") top right no-repeat;
     /*Desktop foto */
     background-size: cover;
     position: relative;
