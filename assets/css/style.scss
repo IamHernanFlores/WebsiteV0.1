@@ -758,7 +758,7 @@ body.dark .bxl-github:before {
       text-align: center;
       width: 100%;
       height: 100vh;
-      background: url("../img/LAPORTADA3.png")  top right no-repeat ; 
+      background: url("../img/HeroWA.png")  top right no-repeat ; 
       background: #fff;
       transition: .3s ease all;
     }
@@ -803,7 +803,7 @@ body.dark .info .email {
         text-align: center;
         width: 100%;
         height: 100vh;
-        background: url("../img/LAPORTADA.png")  top right no-repeat ; 
+        background: url("../img/heroBA.png")  top right no-repeat ; 
         background: #111;
         transition: .3s ease all;  
       }
@@ -860,8 +860,8 @@ body.dark .info .email {
       text-align: center;
       width: 100%;
       height: 100vh;
-      background: url("../img/LAPORTADA3.png")   top left no-repeat ;
-      background: #fff;
+      background: url("../img/HeroWA.png") no-repeat ;
+    /*  background: #fff;*/
       transition: .3s ease all;  
     }
     .contact .info {
@@ -898,8 +898,8 @@ body.dark .info .email {
       text-align: center;
       width: 100%;
       height: 100vh;
-      background: url("../img/LAPORTADA.png")   top left no-repeat; 
-      background: #111;
+      background: url("../img/heroBA.png")   no-repeat; 
+    /*  background: #111;*/
       transition: .3s ease all;  
     }
     body.dark #hero h1 {
