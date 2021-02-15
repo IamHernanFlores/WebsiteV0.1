@@ -554,6 +554,8 @@ body {
     line-height: 56px;
     color: #ffff;
     transition: .3s ease all;
+    text-align: center;
+    margin-left: -90px;
 
   }
   
@@ -656,16 +658,31 @@ body.dark .bxl-github:before {
     padding-left: 160px;
     width: 100%;
     height: 100vh;
-    background: url("../img/HeroW.png")  top right no-repeat ; /*Desktop foto predeterminado*/
+    background: url("../img/HeroWA.png")  top right no-repeat ; /*Desktop foto predeterminado*/
     background-size: cover;
     position: relative;
     transition: .3s ease all;  
     }
+
+#hero .social-links {
+  margin-top: 30px;
+  text-align: center;
+  margin-left: -65px;
+}
+.perfilicon{
+  width: 235px;
+  height: 235px;
+}
+
+.datosinfo{
+  margin-left: -603px;
+  margin-top: -70px;
+}
   body.dark #hero {
     padding-left: 160px;
     width: 100%;
     height: 100vh;
-    background: url("../img/HeroBB.png")  top right no-repeat ; /*Desktop foto */
+    background: url("../img/heroBA.png")  top right no-repeat ; /*Desktop foto */
     background-size: cover;
     position: relative;
     transition: .3s ease all;
@@ -700,6 +717,32 @@ body.dark .bxl-github:before {
     }
 
   }
+
+  /*TITULO Y P DE HERO*/
+  @media (min-width: 992px)
+  {
+ #hero h1 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #45505b;
+    text-align: center;
+    margin-left: -90px;
+}
+  }
+
+  @media (min-width: 992px)
+  {
+#hero p {
+    color: #45505b;
+    margin: 15px 0 0 0;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-left: -90px;
+}
+  }
   
   
   @media (max-width: 992px) { /*Ipad foto*/
@@ -716,6 +759,10 @@ body.dark .bxl-github:before {
       margin-top: 20px;                             /*CAMBIO FORM*/
       display: flex;
       transition: .3s ease all;
+  }
+  .perfilicon{
+    width: 200px;
+    height: 200px;
   }
   
   body.dark .info .email {
@@ -782,6 +829,22 @@ body.dark .info .email {
       }
   
     }
+/*Animacion PERFIL*/
+    .perfilicon{
+      transition: transform .5s; /* Animation */
+
+    }
+    .perfilicon:hover{
+      transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+    .perfilicon .dark{
+      transition: transform .5s; /* Animation */
+
+    }
+    .perfilicon .dark:hover{
+      transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
 
 
   @media (max-width: 558px) { /*Mobile foto*/  /*CAMBIO FORM*/
@@ -807,6 +870,13 @@ body.dark .info .email {
     margin-left: auto;
     margin-right: auto;
 }
+.perfilicon{
+  width: 130px;
+  height: 130px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 
 body.dark .info .email {
   margin-top: 40px;
