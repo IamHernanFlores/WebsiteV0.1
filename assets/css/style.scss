@@ -555,8 +555,6 @@ body {
     color: #ffff;
     transition: .3s ease all;
     text-align: center;
-    margin-left: -90px;
-
   }
   
   #hero p {
@@ -686,6 +684,16 @@ body.dark .bxl-github:before {
     background-size: cover;
     position: relative;
     transition: .3s ease all;
+  }
+  body.dark #hero h1 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #ffff;
+    transition: .3s ease all;
+    text-align: center;
+    margin-left: -90px;
   }
     /*Maneja el fonfo global en modo normal*/
     #hero:before {
@@ -861,6 +869,7 @@ body.dark .info .email {
       margin-top: 20px;
       display: block;            /*CAMBIO FORM*/
   }
+  
   .contact .info .email, .contact .info .phone {
     margin-top: 40px;
     background: #ffff;
@@ -892,6 +901,15 @@ body.dark .info .email {
       background: url("../img/LAPORTADA.png")   top left no-repeat; 
       background: #111;
       transition: .3s ease all;  
+    }
+    body.dark #hero h1 {
+      margin: 0;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 56px;
+      color: #ffff;
+      transition: .3s ease all;
+      text-align: center;
     }
     #hero:before {
       content: "";
