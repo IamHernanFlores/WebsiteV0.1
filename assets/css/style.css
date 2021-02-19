@@ -302,57 +302,213 @@ a:hover {
   transition: background 0.2s ease-in-out;
 }
 
-/*--------------------------------------------------------------
-  # Preloader
-  --------------------------------------------------------------*/
-#preloader {
+.preload {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
+  width: 100%;
+  height: 100vh;
+  background: #22c1c3;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(11%, #22c1c3), to(#0563bb));
+  background: linear-gradient(0deg, #22c1c3 11%, #0563bb 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
-#preloader:before {
-  content: "";
+body.dark
+.preload {
   position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #0563bb;
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0563bb;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0563bb), to(#1a191f));
+  background: linear-gradient(0deg, #0563bb 0%, #1a191f 100%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
-@-webkit-keyframes animate-preloader {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cloud1,
+.cloud2,
+.cloud3 {
+  height: 100px;
+  position: absolute;
+  right: 0%;
+  z-index: -1;
+}
+
+.cloud1 {
+  top: 25%;
+  -webkit-transform: translate(100%, 25%);
+          transform: translate(100%, 25%);
+  -webkit-animation: clouds 1s ease infinite;
+          animation: clouds 1s ease infinite;
+}
+
+.cloud2 {
+  top: 50%;
+  -webkit-transform: translate(100%, 50%);
+          transform: translate(100%, 50%);
+  -webkit-animation: clouds 1s ease infinite 0.3;
+          animation: clouds 1s ease infinite 0.3;
+}
+
+.cloud3 {
+  top: 75%;
+  -webkit-transform: translate(100%, 75%);
+          transform: translate(100%, 75%);
+  -webkit-animation: clouds 1s ease infinite 0.5s;
+          animation: clouds 1s ease infinite 0.5s;
+}
+
+.airplane {
+  height: 200px;
+  -webkit-animation: airplane 1s ease infinite alternate;
+          animation: airplane 1s ease infinite alternate;
+}
+
+.preload h3 {
+  position: absolute;
+  top: 75%;
+  -webkit-transform: translateY(-75%);
+          transform: translateY(-75%);
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+@-webkit-keyframes airplane {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+  to {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
 }
 
-@keyframes animate-preloader {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+@keyframes airplane {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+  to {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
 }
 
+@-webkit-keyframes clouds {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 130%;
+  }
+}
+
+@keyframes clouds {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 130%;
+  }
+}
+
+/*--------------------------------------------------------------
+  # Preloader
+  --------------------------------------------------------------
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  body.dark #preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background:#111;
+  }
+
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #0563bb;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+
+  body.dark #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #0563bb;
+    border-top-color: #111;
+    border-bottom-color: #111;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
 /*--------------------------------------------------------------
   # Disable aos animation delay on mobile devices
   --------------------------------------------------------------*/

@@ -3,13 +3,20 @@
   "use strict";
 
   // Preloader
+
+window.addEventListener('load', () => {
+  const preload = document.querySelector('.preload');
+  preload.classList.add('preload-finish');
+});
+
+  /*
   $(window).on('load', function() {
     if ($('#preloader').length) {
       $('#preloader').delay(100).fadeOut('slow', function() {
         $(this).remove();
       });
     }
-  });
+  });*/
 
   // Hero typed
   if ($('.typed').length) {
@@ -185,15 +192,30 @@
 
 })(jQuery);
 
-// DARK
+// DARK Mode
 
 const btnSwitch = document.querySelector('#switch');
 
 btnSwitch.addEventListener('click', () => {
     document.body.classList.toggle('dark');
     btnSwitch.classList.toggle('active');
+
+// Guardamos el modo en localstorage.
+if(document.body.classList.contains('dark')){
+  localStorage.setItem('dark-mode', 'true');
+} else {
+  localStorage.setItem('dark-mode', 'false');
+}
 });
 
+// Obtenemos el modo actual.
+if(localStorage.getItem('dark-mode') === 'true'){
+document.body.classList.add('dark');
+btnSwitch.classList.add('active');
+} else {
+document.body.classList.remove('dark');
+btnSwitch.classList.remove('active');
+}
 
 
 // Progreso tecnologiaa 
