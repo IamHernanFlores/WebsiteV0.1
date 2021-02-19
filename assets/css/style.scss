@@ -848,6 +848,15 @@ body.dark .bxl-github:before {
   }
 
   /*TITULO Y P DE HERO*/
+  @media (min-width: 1200px)
+  {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1140px;
+      margin-top: 16px;
+  }
+  }
+ 
+
   @media (min-width: 992px)
   {
  #hero h1 {
