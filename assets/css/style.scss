@@ -783,6 +783,11 @@ body.dark .bxl-github:before {
     position: relative;
     transition: .3s ease all;  
     }
+    .section-title {
+      text-align: center;
+      padding-bottom: 25px;
+      margin-top: 30px;
+  }
 
 #hero .social-links {
   margin-top: 30px;
@@ -807,6 +812,11 @@ body.dark .bxl-github:before {
     position: relative;
     transition: .3s ease all;
   }
+  body.dark .section-title {
+    text-align: center;
+    padding-bottom: 25px;
+    margin-top: 30px;
+}
   body.dark #hero h1 {
     margin: 0;
     font-size: 64px;
@@ -982,15 +992,22 @@ body.dark .info .email {
       text-align: center;
       width: 100%;
       height: 100vh;
-      background: url("../img/HeroWAA.png") center bottom -120px no-repeat ;
+      background: url("../img/heroWAMobile.png") center bottom -90px no-repeat ;
     /*  background: #fff;*/
       transition: .3s ease all;  
+      
     }
     .contact .info {
       width: 100%;
       margin-top: 20px;
       display: block;            /*CAMBIO FORM*/
   }
+
+  .section-title {
+    text-align: center;
+    padding-bottom: 25px;
+    margin-top: 10px;
+}
   
   .contact .info .email, .contact .info .phone {
     margin-top: 40px;
@@ -1020,10 +1037,16 @@ body.dark .info .email {
       text-align: center;
       width: 100%;
       height: 100vh;
-      background: url("../img/heroBA.png")  center bottom -120px no-repeat; 
+      background: url("../img/heroBAMobile.png")  center bottom -120px no-repeat; 
     /*  background: #111;*/
       transition: .3s ease all;  
     }
+
+    body.dark .section-title {
+      text-align: center;
+      padding-bottom: 25px;
+      margin-top: 10px;
+  }
     body.dark #hero h1 {
       margin: 0;
       font-size: 64px;
