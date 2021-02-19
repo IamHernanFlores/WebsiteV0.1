@@ -778,7 +778,7 @@ body.dark .bxl-github:before {
     padding-left: 160px;
     width: 100%;
     height: 100vh;
-    background: url("../img/HeroWA.png")  top right no-repeat ; /*Desktop foto predeterminado*/
+    background: url("../img/HeroWAA.png")  top right no-repeat ; /*Desktop foto predeterminado*/
     background-size: cover;
     position: relative;
     transition: .3s ease all;  
@@ -880,7 +880,7 @@ body.dark .bxl-github:before {
       text-align: center;
       width: 100%;
       height: 100vh;
-      background: url("../img/HeroWA.png")  top right no-repeat ; 
+      background: url("../img/HeroWAA.png")  top right no-repeat ; 
       background: #fff;
       transition: .3s ease all;
     }
@@ -982,7 +982,7 @@ body.dark .info .email {
       text-align: center;
       width: 100%;
       height: 100vh;
-      background: url("../img/HeroWA.png") no-repeat ;
+      background: url("../img/HeroWAA.png") center bottom -120px no-repeat ;
     /*  background: #fff;*/
       transition: .3s ease all;  
     }
@@ -1020,7 +1020,7 @@ body.dark .info .email {
       text-align: center;
       width: 100%;
       height: 100vh;
-      background: url("../img/heroBA.png")   no-repeat; 
+      background: url("../img/heroBA.png")  center bottom -120px no-repeat; 
     /*  background: #111;*/
       transition: .3s ease all;  
     }
@@ -2119,23 +2119,27 @@ body.dark .contact .php-email-form input {
   # Footer
   --------------------------------------------------------------*/
   #footer {
-    background: #f7f8f9;
+    background: url("../img/imgfooterW.png")  top  no-repeat ; 
     color: #45505b;
-    font-size: 14px;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 80px;
-  }
-
-  #footer, .container.dark{
-    background: #2222;
-    color: #45505b;
-    font-size: 14px;
     text-align: center;
     padding: 30px 0;
     margin-top: 80px;
     transition: .3s ease all;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+  }
 
+ body.dark #footer {
+    background: url("../img/imgfooter.png")  top  no-repeat ; 
+    color: #45505b;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 80px;
+    transition: .3s ease all;
+    width: 100%;
+    background-size: cover;
+    position: relative;
   }
     
   #footer h3 {
@@ -2248,7 +2252,7 @@ body.dark .contact .php-email-form input {
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 0px;    // BORDER A TODO 
   outline: none;
   border: none;
 }
