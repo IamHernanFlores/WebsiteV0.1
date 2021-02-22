@@ -799,8 +799,9 @@ body.dark .address {
     height: 235px;
   }
   .datosinfo {
-    margin-left: -603px;
+    margin-left: -515px;
     margin-top: -70px;
+    margin-top: -51px;
   }
   body.dark #hero {
     padding-left: 160px;
