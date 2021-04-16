@@ -2441,4 +2441,13 @@ select {
   border-radius: 3px;
   padding: 6px 12px;
 }
+
+.codigo {
+  text-align: center;
+  font-size: 5x;
+}
+
+body.dark .codigo {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
